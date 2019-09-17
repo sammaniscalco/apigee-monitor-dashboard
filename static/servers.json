@@ -1,0 +1,29 @@
+[
+    {
+        "id": "1-domain",
+        "url": "https://1.domain.com",
+        "components": [
+            "ms",
+            "mp"
+        ]
+    },
+    {
+        "id": "2-domain",
+        "url": "https://2.domain.com",
+        "components": [
+            "r",
+            "qis"
+        ]
+    },
+    {
+        "id": "3-domain",
+        "url": "https://3.domain.com",
+        "components": [
+            "r",
+            "ps",
+            "qis",
+            "ms",
+            "mp"
+        ]
+    }
+]
