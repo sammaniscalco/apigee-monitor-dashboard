@@ -7,8 +7,8 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-const sJson = require("./assets/servers.json");
-const cJson = require("./assets/components.json");
+//const sJson = require("./assets/servers.json");
+//const cJson = require("./assets/components.json");
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)

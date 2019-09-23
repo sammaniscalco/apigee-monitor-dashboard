@@ -14,7 +14,7 @@
 
 <script>
 import axios from "axios";
-import componentItem from "../components/componentItem";
+import componentItem from "./componentItem";
 
 export default {
   name: "Components",
@@ -49,7 +49,7 @@ export default {
   methods: {
     fetchData() {
       const vm = this;
-      axios.get("/components.json").then(response => {
+      axios.get("./components.json").then(response => {
         vm.components = response.data.filter(item => {
           return item.id == this.id || !this.id;
         });

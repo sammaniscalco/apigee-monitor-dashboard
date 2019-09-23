@@ -10,7 +10,7 @@
 
 <script>
 import axios from "axios";
-import serverItem from "../components/serverItem";
+import serverItem from "./serverItem";
 
 export default {
   name: "Servers",
@@ -45,7 +45,7 @@ export default {
   methods: {
     fetchData() {
       const vm = this;
-      axios.get("/servers.json").then(response => {
+      axios.get("./servers.json").then(response => {
         vm.servers = response.data.filter(item => {
           return item.id == this.id || !this.id;
         });

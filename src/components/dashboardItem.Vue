@@ -42,7 +42,7 @@ export default {
       //map for each component inserver
       vm.server.components.map((c, cindex) => {
         //get server component status
-        axios.get("/components.json").then(r => {
+        axios.get("./components.json").then(r => {
           var cm = (c = r.data.filter(item => {
             return item.id == c;
           })[0]);

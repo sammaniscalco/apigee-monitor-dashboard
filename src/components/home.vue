@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import dashboardItem from "../components/dashboardItem";
+import dashboardItem from "./dashboardItem";
 import axios from "axios";
 
 export default {
@@ -46,7 +46,7 @@ export default {
     fetchData() {
       const vm = this;
       //get servers from api
-      axios.get("/servers.json").then(response => {
+      axios.get("./servers.json").then(response => {
         //set servers
         vm.servers = response.data;
       });
